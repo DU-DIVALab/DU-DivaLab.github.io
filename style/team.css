@@ -1,0 +1,39 @@
+.people-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+
+    border-top: solid 1px var(--dark);
+    border-left: solid 1px var(--dark);
+    border-bottom: solid 2px var(--dark);
+    border-right: solid 2px var(--dark);
+
+    background-color: var(--overcast);
+
+    border-radius: 0px;
+
+    margin: 1em
+}
+
+.member > img {
+    width: 150px;
+    margin: 10px 10px 0 10px;
+
+    border-radius: 0px;
+    border-bottom: 1px solid var(--dark);
+    border-right: 1px solid var(--dark);
+}
+
+.member > div > p {
+    text-align: center;
+}
+
+.member > div > p > i {
+    font-size: small;
+}

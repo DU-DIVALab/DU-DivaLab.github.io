@@ -1,0 +1,11 @@
+#logo {
+    width: 50%;
+    margin: 3em auto 0 auto;
+}
+
+#miku {
+    width: 90%;
+    margin: 0 auto 1em auto;
+
+    display: block;
+}
