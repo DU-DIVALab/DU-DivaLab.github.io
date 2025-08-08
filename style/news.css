@@ -1,21 +1,6 @@
 /* News page styles */
-
-#main {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 h1.center {
     margin-bottom: 0.5rem;
-}
-
-hr {
-    background-color: var(--dreary);
-    border-color: var(--dreary);
-}
-
-#navbar {
-    margin-bottom: 2rem;
 }
 
 .news-welcome {

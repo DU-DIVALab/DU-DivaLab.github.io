@@ -70,11 +70,8 @@
     display: inline-block;
     background: transparent;
     color: var(--primary, #252525);
-    font-size: 0.85rem;
-    font-weight: 200;
+    font-size: 0.8rem;
     text-decoration: underline;
-    margin-top: 0.2rem;
-    margin-bottom: 0.1rem;
     margin-right: 0.7rem;
     letter-spacing: 0.5px;
     border: none;
