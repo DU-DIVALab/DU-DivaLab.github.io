@@ -69,9 +69,9 @@
 .pub-pages {
     display: inline-block;
     background: transparent;
-    color: var(--primary, #545454);
+    color: var(--primary, #252525);
     font-size: 0.85rem;
-    font-weight: 100;
+    font-weight: 200;
     text-decoration: underline;
     margin-top: 0.2rem;
     margin-bottom: 0.1rem;
