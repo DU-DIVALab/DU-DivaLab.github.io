@@ -11,6 +11,8 @@ body {
   font-family: 'Ruwudu', sans-serif;
   background-color: var(--background);
   font-size: 20px;
+
+  margin-top: 10rem;
 }
 
 
@@ -49,7 +51,6 @@ section {
 }
 
 #home>div>h1::after {
-    /* visibility: hidden; */
     content: "|";
     user-select: none;
     pointer-events: none;
@@ -67,11 +68,20 @@ navbar {
     /* TRBL */
     
 
-    padding: 3.5rem 6rem 2.5rem 4rem;
+    padding: 3rem 6rem 2rem 4rem;
     font-size: larger;
 
-    background-color: var(--background);
+    background-color: #eaeaea;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 navbar > div {
@@ -113,6 +123,68 @@ navbar > nav > a {
     position: relative; /* Sets container height */
 }
 
+
+
+
+/* News section styling */
+#news {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    min-height: 600px;
+    margin: 6rem 4rem;
+}
+
+#news-globe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+#news-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+#news h1 {
+    margin: 0 0 2rem 0;
+}
+
+#news-subtitle {
+    font-size: 18px;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+.news-item {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.news-date {
+    font-weight: 600;
+    color: #333;
+}
+
+.news-item a {
+    text-decoration: underline;
+}
+
+.expand-link {
+    margin-top: 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+.expand-link:hover {
+    text-decoration: underline;
+}
 
 
 /* mobile */
