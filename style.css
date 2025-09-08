@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Ruwudu:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Ruwudu', sans-serif;
+  background-color: #e8e8e8;
+  font-size: 20px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 9.5rem;
+    font-weight: 800;
+    line-height: 0.8;
+
+    margin: 3rem 4rem 1rem 4rem;
+    padding: 0;
+    user-select: none; /* for the A's notch's sake */
+}
+
+#logo::after {
+    visibility: hidden;
+    content: "|";
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-4.94rem, 3.8rem) rotate(17.05deg); 
+    color: #e8e8e8; /* matches background to create notch effect */
+    font-size: calc(9.5rem * 0.53125); /*53.125% of the original font size */
+}
+
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* TRBL */
+    padding: 3.5rem 6rem 3rem 4rem;
+    font-size: larger;
+}
+
+navbar > div {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+navbar > nav {
+    display: flex;
+    gap: 2rem;
+}
+
+navbar > nav > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#splashtext {
+    padding: 2rem 4.5rem;
+    width: 37%;
+}

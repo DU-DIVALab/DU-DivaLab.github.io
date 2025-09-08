@@ -8,57 +8,36 @@
         <meta name="theme-color" content="#fec500" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="/style/global.css">
-        <link rel="stylesheet" href="/style/navbar.css">
-        <link rel="stylesheet" href="/style/layout.css">
-        <link rel="stylesheet" href="/style/index.css">
+        <link rel="stylesheet" href="style.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 	</head>
-    <body class="overcast">
-        <section id="main">
+    <body>
+       
+    <navbar>
+        <span>DIGITAL INTELLIGENT VIRTUAL AGENTS LAB</span>
+        <nav class="nav-links">
+            <a href="#home">home</a>
+            <a href="#news">news</a>
+            <a href="#publications">publications</a>
+            <a href="#team">team</a>
+        </nav>
+    </navbar>
 
-                <div id="logo">
-                    <img id="miku" src="/media/logo/default.svg" alt="An image of Hatsune Miku" draggable="false">
-                    <img id="diva" src="/media/logo/text.svg" alt="DIVA" draggable="false" style="filter: brightness(1);">
-                </div>
+    <h1 id="logo">DIVA</h1>
+    <p id="splashtext">
+        The Digital Intelligent Virtual Agents (DIVA) Lab is part of the <a href="https://drexel.edu/cci/">College of Computing and Informatics</a> at Drexel University.
+        <br><br>
+        Under the leadership of Dr. Tiffany D. Do, our lab conducts research on virtual assistants, agents, and avatars. We investigate how users interact with these technologies and explore how human-centered AI can drive innovation in the digital age. Stay tuned for updates! 👀
+    </p>
 
-                <h1 class="center">Digital Intelligent Virtual Agents Lab</h1>
-                
-                <br>
-            
-                <hr style="background-color: var(--dreary); border-color: var(--dreary);">
+    <!-- 
+        <div class="unit dreary block-20" id="visual">
+            <img src="/assets/dummy.png" alt="A big rat sitting on a person's leg." draggable="false">
+            <p>(6.4.24) Image Caption Goes here</p>
+        </div> 
+    -->
 
-                <div id="navbar">
-                    <ul id="navbar-links">
-                        <li class="hide-mobile"><a href="/">home</a></li> 
-                        <li><a href="/news">news</a></li>
-                        <li><a href="/publications">publications</a></li>
-                        <li><a href="/team">team</a></li>
-                    </ul>
-                </div>
-
-                <hr style="background-color: var(--dreary); border-color: var(--dreary);">
-
-                <p>
-                    The Digital Intelligent Virtual Agents (DIVA) Lab is part of the <a href="https://drexel.edu/cci/" target="_blank">College of Computing and Informatics</a> at Drexel University.
-                </p>
-                <p>
-                    Under the leadership of Dr. Tiffany D. Do, our lab conducts research on virtual assistants, agents, and avatars. We investigate how users interact with these technologies and explore how human-centered AI can drive innovation in the digital age.
-                    Stay tuned for updates! 👀
-                </p>
-          
-
-            <!-- <div class="unit dreary block-20" id="visual">
-                <h1 class="bright center">Selected Images</h1>
-                <hr style="background-color: var(--dreary); border-color: var(--dreary);">
-                <br>
-                
-                <img src="/assets/dummy.png" alt="A big rat sitting on a person's leg." draggable="false">
-                <p>(6.4.24) Image Caption Goes here</p>
-            </div> -->
-
-    </section>
     <footer style="height: 60px;"></footer>
         <script async defer>
 			console.log("vish was here\n:)")
