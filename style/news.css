@@ -1,0 +1,72 @@
+#news {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    min-height: 600px;
+    margin: 0rem 8rem;
+}
+
+#globe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    opacity: 1;
+    z-index: 1;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+}
+
+#news > #content  {
+    /* TRBL */
+    margin: 8rem 0 0 7rem;
+    padding: 0 0 0 0;
+}
+
+#news > #content > h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#subtitle {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+#updates {
+    background-color: var(--background);
+    margin: 0rem 0rem 0rem 10rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+
+    max-width: 500px;
+}
+
+.item {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.date {
+    font-weight: 600;
+    color: #333;
+}
+
+.item a {
+    text-decoration: underline;
+}
+
+.expand-link {
+    margin-top: 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+.expand-link:hover {
+    text-decoration: underline;
+}
