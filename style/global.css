@@ -5,14 +5,12 @@
 	--accent: #31508e;
     --secondary: #e3d94b;
     --background: #e8e8e8;
-	/* --accent-alt: #ae2334; */
 }
 
 body {
   font-family: 'Ruwudu', sans-serif;
   background-color: var(--background);
   font-size: 20px;
-  /* margin-top: 8rem; */
 }
 
 
@@ -39,11 +37,6 @@ h1 {
 }
 
 
-/* section {
-    margin: 0 4rem 0rem 4rem;
-    padding: 0;
-    scroll-margin-top: 8rem;
-} */
 
 navbar {
     display: flex;
@@ -53,24 +46,6 @@ navbar {
 
     padding: 3rem 6rem 2rem 4rem;
     font-size: 1.15rem;
-    /* background: 
-    linear-gradient(to bottom, 
-
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0.8) 40%,
-        rgba(255, 255, 255, 0) 80%
-    );
-    backdrop-filter: blur(10px) saturate(120%);
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1000;
-*/
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
 }
 
 

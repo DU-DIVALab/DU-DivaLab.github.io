@@ -1,12 +1,3 @@
-
-
-/* #home {
-    display: flex;
-    align-items: flex-start;
-    gap: 0rem;
-    margin: 0rem 2rem 0 4rem;
-} */
-
 #home>div>h1 {
     margin-bottom: 2rem;
 }
@@ -24,23 +15,12 @@
 
 #splashtext {
     padding: 0rem 0.5rem;
-    /* width: 66%; */
 }
-@media (max-width: 600px) {
-    #splashtext {
-        padding: 0 1rem 0 1rem;
-        /* width: 66%; */
-    }
-}
+
 
 #logo {
     position: relative;
-    /* width: 100%; */
     overflow: visible;
-
-    /* width: 600px; */
-    /*height: auto;  Will be determined by first image */
-
     transform: translate(-1rem, -1rem);
 }
 
@@ -53,3 +33,8 @@
 
 
 
+@media (max-width: 600px) {
+    #splashtext {
+        padding: 0 1rem 0 1rem;
+    }
+}

@@ -109,7 +109,7 @@
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .header {
-        min-height: 200px; /* adjust based on your image height */
+        min-height: 200px; /* adjust based on image height */
     }
 
     .header > h1 {
