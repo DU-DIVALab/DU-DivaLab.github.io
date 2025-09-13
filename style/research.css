@@ -1,3 +1,5 @@
+member { color: var(--accent); }
+
 .header {
     position: relative;
     z-index: 2;
@@ -17,7 +19,7 @@
     background-color: rgba(232, 232, 232, 0.65);
 }
 
-#globe {
+.halftone-book {
     position: absolute;
     top: 7rem;
     right: 6rem;
@@ -28,7 +30,7 @@
     /* transform: scale(1, 1); */
 }
 
-.updates {
+.publications {
     position: relative;
     z-index: 2;
     margin-top: 3rem;
@@ -38,9 +40,9 @@
     background-color: var(--background);
 }
 
-.update-year {
+.publication-year {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     gap: 3rem;
 }
 
@@ -52,23 +54,23 @@
     margin-top: 0.5rem;
 }
 
-.headlines {
+.papers {
     flex: 1;
 }
 
-.headline {
-    margin-bottom: 2rem;
+.paper {
+    margin-bottom: 3rem;
 }
 
-.headline p {
+.paper p {
     margin: 0.3rem 0;
     line-height: 1.4;
 }
 
-.headline p:first-child {
+.paper p:first-child {
     font-weight: 500;
 }
 
-.headline p:last-child {
+.paper p:last-child {
     color: #333;
 }
