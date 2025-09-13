@@ -4,7 +4,7 @@
     padding-top: 6rem;
     padding-left: 6rem;
     padding-bottom: 0;
-
+    overflow: hidden;
 }
 
 .header > h1 {
@@ -14,32 +14,28 @@
 .header > p {
     padding-left: 1rem;
     max-width: fit-content;
+    z-index: 3;
     background-color: rgba(232, 232, 232, 0.65);
 }
 
 #globe {
     position: absolute;
-    top: 7rem;
-    right: 6rem;
+    top: 0rem;
+    right: 5rem;
     width: 750px;
-    /* max-width: 30%; */
     opacity: 1;
-    z-index: 1;
-    /* transform: scale(1, 1); */
+    z-index: -1;
+    overflow: hidden;
 }
 
 .updates {
     position: relative;
     z-index: 2;
     margin-top: 3rem;
-    max-width: 100%;
-
-    padding: 6rem 12rem 0 12rem;
     background-color: var(--background);
 }
 
 .update-year {
-    display: flex;
     margin-bottom: 2rem;
     gap: 3rem;
 }
@@ -47,8 +43,6 @@
 .year {
     font-size: 1.5rem;
     font-weight: 700;
-    width: 80px;
-    flex-shrink: 0;
     margin-top: 0.5rem;
 }
 
@@ -71,4 +65,33 @@
 
 .headline p:last-child {
     color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .header {
+        padding: 3rem 2rem 0 2rem;
+    }
+    .header > h1 {
+        font-size: larger;
+    }
+    .header > p {
+        font-size: small;
+        padding-left: 0;
+    }
+    
+    .updates {
+        font-size: small;
+        padding: 0rem 2rem 0 2rem;
+    }
+    
+    #globe {
+        top: 0rem;
+        left: 5rem;
+    }
+    
+    .year {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
 }
