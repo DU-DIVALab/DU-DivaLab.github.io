@@ -36,7 +36,7 @@
 #logo {
     position: relative;
     /* width: 100%; */
-    overflow: hidden;
+    overflow: visible;
 
     /* width: 600px; */
     /*height: auto;  Will be determined by first image */
