@@ -8,12 +8,14 @@
         <meta name="theme-color" content="#fec500" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="/style/global.css">
-        <link rel="stylesheet" href="/style/index.css">
-
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"/>
-	</head>
+        
+        <!-- Put these lower so they can override -->
+        <link rel="stylesheet" href="/style/global.css">
+        <link rel="stylesheet" href="/style/index.css">
+    
+    </head>
     <body>
        
     <navbar>
@@ -26,8 +28,9 @@
         </nav>
     </navbar>
 
-    <section id="home">
-        <div>
+    <section id="home" class="pure-g">
+        <div class="pure-u-1-24"> <!-- Formatting div--> </div>
+        <div class="pure-u-md-1-3">
             <h1>DIVA</h1>
             <p id="splashtext">
                 The Digital Intelligent Virtual Agents (DIVA) Lab is part of the <a href="https://drexel.edu/cci/" target="_blank">College of Computing and Informatics</a> at Drexel University.
@@ -35,11 +38,13 @@
                 Under the leadership of Dr. Tiffany D. Do, our lab conducts research on virtual assistants, agents, and avatars. We investigate how users interact with these technologies and explore how human-centered AI can drive innovation in the digital age. Stay tuned for updates!  :)
             </p>
         </div>
-        <div id="logo">
+        <div class="pure-u-1-4"> <!-- Formatting div--> </div>
+        <div id="logo" class="pure-u-1-3">
             <img src="assets/halftone_miku_blue.png">
             <img src="assets/halftone_miku_green.png" style="opacity: 30%;">
             <img src="assets/halftone_miku_red.png" style="opacity: 30%;">
         </div>
+        <div class="pure-u-1-24"> <!-- Formatting div--> </div>
     </section>
 
 
@@ -50,7 +55,7 @@
         </div> 
     -->
 
-    <footer style="height: 60px;"></footer>
+    <footer style="height: 0px;"></footer>
         <script async defer>
 			console.log("vish was here\n:)")
 		</script>
