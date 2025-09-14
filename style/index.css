@@ -1,11 +1,40 @@
-#logo {
-    width: 50%;
-    margin: 3em auto 0 auto;
+#home>div>h1 {
+    margin-bottom: 2rem;
 }
 
-#miku {
-    width: 90%;
-    margin: 0 auto 1em auto;
+#home>div>h1::after {
+    content: "|";
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-4.755rem, 3.8rem) rotate(17.05deg); 
+    color: var(--background); /* matches background to create notch effect */
+    font-size: calc(9.5rem * 0.53125); /*53.125% of the original font size */
+}
 
-    display: block;
+
+#splashtext {
+    padding: 0rem 0.5rem;
+}
+
+
+#logo {
+    position: relative;
+    overflow: visible;
+    transform: translate(-1rem, -1rem);
+}
+
+#logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(550px, 120%)
+}
+
+
+
+@media (max-width: 600px) {
+    #splashtext {
+        padding: 0 1rem 0 1rem;
+    }
 }

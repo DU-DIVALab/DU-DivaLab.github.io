@@ -8,58 +8,55 @@
         <meta name="theme-color" content="#fec500" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"/>
+        
+        <!-- putting these lower so they can override -->
         <link rel="stylesheet" href="/style/global.css">
-        <link rel="stylesheet" href="/style/navbar.css">
-        <link rel="stylesheet" href="/style/layout.css">
         <link rel="stylesheet" href="/style/index.css">
+    
+    </head>
+    <body>
+       
+    <navbar>
+        <span class="hide-mobile">DIGITAL INTELLIGENT VIRTUAL AGENTS LAB</span>
+        <nav class="nav-links">
+            <a href="/">home</a>
+            <a href="/news">news</a>
+            <a href="/research">research</a>
+            <a href="/team">team</a>
+        </nav>
+    </navbar>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-	</head>
-    <body class="overcast">
-        <section id="main">
-
-                <div id="logo">
-                    <img id="miku" src="/media/logo/default.svg" alt="An image of Hatsune Miku" draggable="false">
-                    <img id="diva" src="/media/logo/text.svg" alt="DIVA" draggable="false" style="filter: brightness(1);">
-                </div>
-
-                <h1 class="center">Digital Intelligent Virtual Agents Lab</h1>
-                
-                <br>
-            
-                <hr style="background-color: var(--dreary); border-color: var(--dreary);">
-
-                <div id="navbar">
-                    <ul id="navbar-links">
-                        <li class="hide-mobile"><a href="/">home</a></li> 
-                        <li><a href="/news">news</a></li>
-                        <li><a href="/publications">publications</a></li>
-                        <li><a href="/team">team</a></li>
-                    </ul>
-                </div>
-
-                <hr style="background-color: var(--dreary); border-color: var(--dreary);">
-
-                <p>
-                    The Digital Intelligent Virtual Agents (DIVA) Lab is part of the <a href="https://drexel.edu/cci/" target="_blank">College of Computing and Informatics</a> at Drexel University.
-                </p>
-                <p>
-                    Under the leadership of Dr. Tiffany D. Do, our lab conducts research on virtual assistants, agents, and avatars. We investigate how users interact with these technologies and explore how human-centered AI can drive innovation in the digital age.
-                    Stay tuned for updates! 👀
-                </p>
-          
-
-            <!-- <div class="unit dreary block-20" id="visual">
-                <h1 class="bright center">Selected Images</h1>
-                <hr style="background-color: var(--dreary); border-color: var(--dreary);">
-                <br>
-                
-                <img src="/media/dummy.png" alt="A big rat sitting on a person's leg." draggable="false">
-                <p>(6.4.24) Image Caption Goes here</p>
-            </div> -->
-
+    <section id="home" class="pure-g">
+        <div class="pure-u-1-24"> <!-- Formatting div--> </div>
+        <div class="pure-u-md-1-3">
+            <h1>DIVA</h1>
+            <p id="splashtext">
+                The Digital Intelligent Virtual Agents (DIVA) Lab is part of the <a href="https://drexel.edu/cci/" target="_blank">College of Computing and Informatics</a> at Drexel University.
+                <br><br>
+                Under the leadership of Dr. Tiffany D. Do, our lab conducts research on virtual assistants, agents, and avatars. We investigate how users interact with these technologies and explore how human-centered AI can drive innovation in the digital age. Stay tuned for updates!  :)
+            </p>
+        </div>
+        <div class="pure-u-1-4"> <!-- Formatting div--> </div>
+        <div id="logo" class="pure-u-1-3">
+            <img src="assets/miku_logo.svg">
+            <!-- <img src="assets/halftone_miku_blue.png">
+            <img src="assets/halftone_miku_green.png" style="opacity: 30%;">
+            <img src="assets/halftone_miku_red.png" style="opacity: 30%;"> -->
+        </div>
+        <div class="pure-u-1-24"> <!-- Formatting div--> </div>
     </section>
-    <footer style="height: 60px;"></footer>
+
+
+    <!-- 
+        <div class="unit dreary block-20" id="visual">
+            <img src="/assets/dummy.png" alt="A big rat sitting on a person's leg." draggable="false">
+            <p>(6.4.24) Image Caption Goes here</p>
+        </div> 
+    -->
+
+    <footer style="height: 0px;"></footer>
         <script async defer>
 			console.log("vish was here\n:)")
 		</script>

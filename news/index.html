@@ -3,59 +3,74 @@
     <head>
         <title>DIVA Lab @ Drexel University</title>
         <meta charset="utf-8">
-        <meta name="title" content="News | DIVA Lab @ Drexel University" />
-        <meta name="description" content="The latest updates from the DIVA Lab." />
+        <meta name="title" content="DIVA Lab @ Drexel University" />
+        <meta name="description" content="The Digital Intelligent Virtual Agents (DIVA) Lab conducts research on virtual assistants, agents, and avatars." />
         <meta name="theme-color" content="#fec500" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"/>
+	
         <link rel="stylesheet" href="/style/global.css">
-        <link rel="stylesheet" href="/style/navbar.css">
-        <link rel="stylesheet" href="/style/layout.css">
         <link rel="stylesheet" href="/style/news.css">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     </head>
-    <body class="overcast">
-        <section id="main">
-            <h1 class="center">News</h1>
-            <br>
-            <hr style="background-color: var(--dreary); border-color: var(--dreary);">
-            <div id="navbar">
-                <ul id="navbar-links">
-                    <li><a href="/">home</a></li>
-                    <li class="hide-mobile"><a href="/news">news</a></li>
-                    <li><a href="/publications">publications</a></li>
-                    <li><a href="/team">team</a></li>
-                </ul>
+    <body>
+       
+    <navbar>
+        <span class="hide-mobile">DIGITAL INTELLIGENT VIRTUAL AGENTS LAB</span>
+        <nav class="nav-links">
+            <a href="/">home</a>
+            <a href="/news">news</a>
+            <a href="/research">research</a>
+            <a href="/team">team</a>
+        </nav>
+    </navbar>
+
+    <section id="news" class="pure-g">
+        <div class="pure-u-1 header">
+            <h1>NEWS</h1>
+            <p id="subtitle">Welcome to the news page, featuring the latest updates from the lab:</p>
+            <img id="globe" src="/assets/wireframe_earth.png">
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-12">
+            <!-- formatting div! do not touch :) -->
+        </div>
+        <div class="pure-u-1 pure-u-md-5-6 updates">
+            <div class="update-year pure-g">
+                <div class="pure-u-md-1-8 pure-u-1-4">
+                    <span class="year">2025</span>
+                </div>
+                <div class="pure-u-md-7-8 pure-u-3-4 headlines">
+                    <div class="headline">
+                        <p><month>July</month> - One paper accepted to Artificial Intelligence in Measurement and Education Conference (AIME-Con). <b>Congratulations to Vishnu and Andy!</p>
+                    </div>
+                    <div class="headline">
+                        <p><month>June</month> - One paper accepted to CSCW Poster Track (6 pages). <b>Congratulations to Nathalia and Sue!</p>
+                    </div>
+                    <div class="headline">
+                        <p><month>April</month> - Our <a href="https://arxiv.org/pdf/2409.04645" target="_blank">paper</a> won <a href="https://chi2025.acm.org/best-paper-and-honorable-mention-awards-at-chi-2025/" target="_blank">Best Paper</a> at CHI 2025!</p>
+                    </div>
+                    <div class="headline">
+                        <p><month>January</month> - One paper is accepted to ACM CHI 2025.</p>
+                    </div>
+                </div>
             </div>
-            <hr style="background-color: var(--dreary); border-color: var(--dreary);">
-            <br>
-            <div class="news-welcome">
-                Welcome to the news page, featuring the latest updates from the lab:
+            <div class="update-year pure-g">
+                <div class="pure-u-md-1-8 pure-u-1-4">
+                    <span class="year">2024</span>
+                </div>
+                <div class="pure-u-md-7-8 pure-u-3-4 headlines">
+                    <div class="headline">
+                        <p><month>October</month> - Lab is <a href="https://x.com/zyrcant/status/1845195596073669057" target="_blank">Founded</p>
+                    </div>
+                </div>
             </div>
-            <ul class="news-list">
-                <li class="news-item">
-                    <span class="news-date">July '25</span> &mdash; One paper accepted to Artificial Intelligence in Measurement and Education Conference (AIME-Con). <span class="news-highlight">Congratulations to Vishnu and Andy!</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">Jun '25</span> &mdash; One paper accepted to CSCW Poster Track (6 pages). <span class="news-highlight">Congratulations to Nathalia and Sue!</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">Apr '25</span> &mdash; Our 
-                    <a href="https://arxiv.org/pdf/2409.04645" target="_blank" class="news-link">paper</a> 
-                    won 
-                    <a href="https://chi2025.acm.org/best-paper-and-honorable-mention-awards-at-chi-2025" target="_blank" class="news-link">Best Paper</a> 
-                    at CHI 2025!
-                </li>
-                <li class="news-item">
-                    <span class="news-date">Jan '25</span> &mdash; One paper is accepted to ACM CHI 2025.
-                </li>
-                <li class="news-item">
-                    <span class="news-date">Oct '24</span> &mdash; Lab is 
-                    <a href="https://x.com/zyrcant/status/1845195596073669057" target="_blank" class="news-link">Founded</a>
-                </li>
-            </ul>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-12">
+            <!-- formatting div! do not touch :) -->
+        </div>
     </section>
-    <footer style="height: 60px;"></footer>
-    </body>
+
+</body>
 </html>

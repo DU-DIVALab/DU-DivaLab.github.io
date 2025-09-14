@@ -1,54 +1,97 @@
-/* News page styles */
-h1.center {
-    margin-bottom: 0.5rem;
+.header {
+    position: relative;
+    z-index: 2;
+    padding-top: 6rem;
+    padding-left: 6rem;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
-.news-welcome {
-    background: #f5f7fa;
-    border-radius: 8px;
-    padding: 1.2rem 1.5rem;
+.header > h1 {
+    margin-bottom: 0;
+}
+
+.header > p {
+    padding-left: 1rem;
+    max-width: fit-content;
+    z-index: 3;
+    background-color: rgba(232, 232, 232, 0.65);
+}
+
+#globe {
+    position: absolute;
+    top: 0rem;
+    right: 5rem;
+    width: 750px;
+    opacity: 1;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.updates {
+    position: relative;
+    z-index: 2;
+    margin-top: 3rem;
+    background-color: var(--background);
+}
+
+.update-year {
     margin-bottom: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    font-size: 1.08em;
-    text-align: center;
+    gap: 3rem;
 }
 
-.news-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.year {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
 }
 
-.news-item {
-    margin-bottom: 1.2rem;
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-    padding: 1rem 1.2rem;
+.headlines {
+    flex: 1;
 }
 
-.news-date {
-    font-weight: 600;
-    color: #123690;
+.headline {
+    margin-bottom: 2rem;
 }
 
-.news-highlight {
-    color: #123690;
+.headline p {
+    margin: 0.3rem 0;
+    line-height: 1.4;
 }
 
-.news-link {
-    color: #123690;
-    text-decoration: underline;
+.headline p:first-child {
+    font-weight: 500;
 }
 
+.headline p:last-child {
+    color: #333;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 600px) {
-    #main {
-        padding: 0 0.5rem;
+    .header {
+        padding: 3rem 2rem 0 2rem;
     }
-    .news-welcome {
-        padding: 1rem 0.5rem;
+    .header > h1 {
+        font-size: larger;
     }
-    .news-item {
-        padding: 0.7rem 0.5rem;
+    .header > p {
+        font-size: small;
+        padding-left: 0;
+    }
+    
+    .updates {
+        font-size: small;
+        padding: 0rem 2rem 0 2rem;
+    }
+    
+    #globe {
+        top: 0rem;
+        left: 5rem;
+    }
+    
+    .year {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 }

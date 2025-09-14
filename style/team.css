@@ -1,39 +1,143 @@
-.people-row {
-    display: flex;
-    flex-wrap: wrap;
 
-    justify-content: space-evenly;
+.header {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px; /* adjust based on your image height */
+
 }
+
+.header > h1 {
+    z-index: 3;
+    background-color: rgba(232, 232, 232, 0.75);
+    margin: 0;
+}
+
+#chiral {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+    opacity: 1;
+    z-index: 1;
+}
+.team-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 3rem;
+    background-color: var(--background);
+}
+
+.team-section {
+    margin-bottom: 4rem;
+}
+
+.team-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
 
 .member {
-    display: flex;
-    flex-direction: column;
-
-    border-top: solid 1px var(--dark);
-    border-left: solid 1px var(--dark);
-    border-bottom: solid 2px var(--dark);
-    border-right: solid 2px var(--dark);
-
-    background-color: var(--overcast);
-
-    border-radius: 0px;
-
-    margin: 1em
-}
-
-.member > img {
-    width: 150px;
-    margin: 10px 10px 0 10px;
-
-    border-radius: 0px;
-    border-bottom: 1px solid var(--dark);
-    border-right: 1px solid var(--dark);
-}
-
-.member > div > p {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
-.member > div > p > i {
-    font-size: small;
+.member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--accent);
+}
+
+.member-info h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.member-info .role {
+    font-style: italic;
+    color: #666;
+    margin: 0.3rem 0 1rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--accent);
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: var(--secondary);
+}
+
+.loading-text {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 2rem 0;
+}
+
+.alumni-list {
+    list-style-type: disc;
+    padding-left: 0.1em;
+}
+
+.alumni-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    list-style-type: "";
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .header {
+        min-height: 200px; /* adjust based on image height */
+    }
+
+    .header > h1 {
+        font-size: xx-large;
+    }
+
+    #chiral {
+        top: 50%;
+        left: 50%;
+        width: 180px;
+    }
+    
+    .team-content {
+        font-size: small;
+        padding: 0rem 2rem 0 2rem;
+    }
+    
+    
+    .member img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .team-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .social-links a {
+        font-size: 1.1rem;
+    }
 }
