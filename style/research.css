@@ -19,7 +19,7 @@ member { color: var(--accent); }
     padding-left: 1rem;
     max-width: fit-content;
     z-index: 3;
-    background-color: rgba(232, 232, 232, 0.56);
+    background-color: rgba(232, 232, 232, 0.86);
 }
 
 .halftone-book {
