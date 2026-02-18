@@ -1,53 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Ruwudu:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
     --selection: lightblue;
-	--accent: #31508e;
+    --accent: #31508e;
     --secondary: #e3d94b;
     --background: #e8e8e8;
 }
 
 body {
-  font-family: 'Ruwudu', sans-serif;
-  background-color: var(--background);
-  font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
-
 
 html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
 
-a { color: var(--accent); text-decoration: none; }
-a:hover {  text-decoration: underline 1.5px; }
-::selection { background-color: var(--selection); }
-img { user-select: none; pointer-events: none;}
+a:hover {
+    text-decoration: underline 1.5px;
+}
 
+::selection {
+    background-color: var(--selection);
+}
 
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Headings */
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 9.5rem;
     font-weight: 800;
     line-height: 0.8;
-
     margin: 4rem 0;
     padding: 0;
-    user-select: none; /* for the A's notch's sake */
+    user-select: none;
 }
 
+h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
 
-
+/* Navigation */
 navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* TRBL */
-
     padding: 3rem 6rem 2rem 4rem;
     font-size: 1.15rem;
+    font-family: 'Inter', sans-serif;
 }
-
 
 navbar > nav {
     display: flex;
@@ -57,6 +71,7 @@ navbar > nav {
 navbar > nav > a {
     text-decoration: none;
     color: inherit;
+    font-weight: 500;
 }
 
 @media (max-width: 600px) {
@@ -65,11 +80,21 @@ navbar > nav > a {
         font-size: small;
         justify-content: center;
     }
-    navbar > nav { gap: 3rem; }
+
+    navbar > nav {
+        gap: 3rem;
+    }
 }
 
-/* mobile */
-@media (max-width: 600px) { 
-    .hide-mobile { display: none !important;} 
+/* Mobile visibility helpers */
+@media (max-width: 600px) {
+    .hide-mobile {
+        display: none !important;
+    }
 }
-@media screen and (min-width: 600px) { .hide-desktop { display: none !important; } }
+
+@media screen and (min-width: 600px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
